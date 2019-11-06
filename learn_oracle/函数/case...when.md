@@ -14,11 +14,11 @@ from user;
 ### 第二种
 
 ```plsql
-select id,
-case 
-	when id = '1' then ''
-	when id then 
-else id end as dd
-from user
+SELECT ID,	
+CASE 	
+	WHEN ID = '1' THEN ''
+	WHEN ID THEN 
+ELSE ID END AS DD	
+FROM USER	
 ```
 
