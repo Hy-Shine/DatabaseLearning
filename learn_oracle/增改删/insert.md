@@ -12,7 +12,7 @@
   ---方法1
   INSERT ALL
       INTO TABLE1(COL1,COL2) VALUES(value1,value2)
-      INTO TABLE1(COL2,COL3) VALUES(value3,value4)  --可以与上面有不同字段
+      INTO TABLE1(COL2,COL3) VALUES(value3,value4)  
   SELECT * FROM DUAL;
   等同于
   INSERT INTO TABLE1(COL1,COL2) VALUES(value1,value2);
