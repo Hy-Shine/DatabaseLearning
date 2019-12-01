@@ -4,7 +4,7 @@
 
 ```plsql
 GROUP BY COL1,COL2,... [HAVING CONDITIONS]
-以GROUP BY后的字段作为分组条件,将值相同的放在一个分组
+以 GROUP BY后的字段作为分组条件,将值相同的放在一个分组
 HAVING后跟聚合函数: AVG(),COUNT(),SUM(),MIN(),MAX()等
 ```
 

@@ -3,11 +3,12 @@
 ### 第一种
 
 ```plsql
-select id
+select id,
 case name
-when 'nihao' then ''
-when '' then ''
-else 'qita' end as shi
+	when 'nihao' then value1
+	when '' then value2
+	else 'qita' 
+end as column_name
 from user;
 ```
 
