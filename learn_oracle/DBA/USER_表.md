@@ -1,10 +1,5 @@
 ## 用户表
 
-```plsql
---查看当前用户下所有表的字段注释
-SELECT * FROM USER_COL_COMMENTS ORDER BY TABLE_NAME
-TABLE_NAME,COLUMN_NAME,COMMENTS
-```
 ### 表与字段
 
 ```plsql
@@ -16,6 +11,8 @@ select * from all_tables;
 SELECT * FROM USER_TAB_COLUMNS;
 ---查看所有用户下表字段(OWNER,TABLE_NAME,COLUMN_NAME,DATA_TYPE,DATA_LENGTH)
 SELECT * FROM ALL_TAB_COLUMNS;
+--查看当前用户下所有对象信息
+select * from user_objects;
 ```
 
 ### 注释

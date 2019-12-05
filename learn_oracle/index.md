@@ -12,13 +12,6 @@
   on table_name(column1,column2...|[express])  --express表示函数索引
   [tablespace tab_name] --tablespace表示索引存储的表空间
   [pctfree n1]     --索引块的空闲空间n1
-  [storage         --存储块的空间
-   (
-      initial 64K  --初始64k
-      next 1M
-      minextents 1
-      maxextents unlimited
-  )];
   注释：
   column_name：指定要对哪个列创建索引，也可以对多列创建索引，这种索引称为组合索引。若为函数表达式，则称为函数索引。
   ```

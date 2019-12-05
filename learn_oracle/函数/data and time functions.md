@@ -13,7 +13,7 @@ INTERVAL 'Value' format(year|month|day|hour|minute|second)
 - add_months(date,i)  加减月份
 
   ```plsql
-  SELECT ADD_MONTHS(SYSDATE,+-2) FROM DUAL;   ---当前时间添加/减去2个月
+  SELECT ADD_MONTHS(SYSDATE,+/-2) FROM DUAL;   ---当前时间添加/减去2个月
   ```
   
 - MONTHS_BETWEEN(date1,date2)
@@ -35,15 +35,15 @@ INTERVAL 'Value' format(year|month|day|hour|minute|second)
 - last_day(date)
 
   ```plsql
-  作用：返回某月的最后一天
+  作用：返回日期所在月份的最后一天
   SELECT LAST_DAY(date1) FROM DUAL;  --返回指定日期所在月份的最后一天
   ```
 
-- extract(date from datetime)
+- EXTRACT(date from time)
 
   ```plsql
-  --Date1为日期格式,YEAR、MONTH、DAY、HOUR、MINUTE、SECOND
-  SELECT EXTRACT(month from Date1) from TABLE1;
+  --format为日期格式,YEAR、MONTH、DAY
+  SELECT EXTRACT(month from format) from TABLE1;
   SELECT EXTRACT(YEAR FROM SYSDATE) FROM DUAL;
   SELECT EXTRACT(DAY FROM SYSDATE) FROM DUAL;
   ```
