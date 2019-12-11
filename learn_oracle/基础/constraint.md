@@ -26,5 +26,7 @@ alter table table1 drop primary key;
 ```plsql
 ALTER TABLE table_name DISABLE|ENABLE CONSTRAINT primary_key_constraint_name;
 ALTER TABLE table_name DISABLE|ENABLE PRIMARY KEY;
+[启用|禁用约束]
+ALTER TABLE TABLE_NAME ENABLE|DISABLE CONSTRAINT CONSTRAINT_NAME;
 ```
 

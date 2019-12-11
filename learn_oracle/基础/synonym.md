@@ -10,13 +10,13 @@ Oracle synonym 同义词是数据库当前用户通过给另外一个用户的�
 
 ```plsql
 --创建public synonym 需要有dba权限,创建者要有对object的操作权限
-CREATE [OR REPLACE] [PUBLIC] SYNONYM [USER1].SYNONYM_NAME FOR user2.object 
+CREATE [OR REPLACE] [PUBLIC] SYNONYM [USER1].SYNONYM_NAME FOR user2.object_name; 
 ```
 
 ### 2.2	删除
 
 ```plsql
---同义词删除只能通过同义词拥有者的用户或者具有DBA权限的用户才能删除
+--同义词删除只能通过同义词拥有者或者具有DBA权限的用户才能删除
 DROP [PUBLIC] SYNONYM [USER.]sysnonym_name;
 ```
 
