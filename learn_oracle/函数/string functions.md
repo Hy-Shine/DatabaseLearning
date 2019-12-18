@@ -61,4 +61,12 @@
   initcap('hello[!|#|%|汉字]world') >Hello[!|#|%|汉字]World，特殊字符包含且不限于这些
   ```
 
-  
+- chr(),ascii()
+
+    ```plsql
+    --char() 将ascii值对应字符,ascii()求对应字符的ascii值
+    CHR(65)	A
+    ASCII('A')	65
+    ```
+
+    
