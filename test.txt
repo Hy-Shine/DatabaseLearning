@@ -1,3 +1,0 @@
-This a test file.
-Git is free software.
-Git has a mutable index called stage.

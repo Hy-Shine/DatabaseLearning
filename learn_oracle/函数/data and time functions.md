@@ -1,6 +1,6 @@
 ## 日期函数
 
-Oracle中常用的日期格式有两种：DATE、TIMESTAMP。DATE精确到秒，TIMESTAMP精确到秒的小数。
+Oracle中常用的日期格式有两种：DATE、TIMESTAMP。DATE精确到秒，TIMESTAMP精确到小数秒。
 
 ```plsql
 --Oracle中的日期可以与数值直接计算，DATE/TIMESTAMP类型与数值直接计算的结果均为DATE类型

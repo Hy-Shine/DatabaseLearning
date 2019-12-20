@@ -29,18 +29,15 @@ Usage: CREATE [OR REPLACE] VIEW VIEW_NAME AS
   create view vw_stuinfo as 
   select a.stuid,--学号
          a.stuname,--学生姓名
-         a.grade,--年级
          a.age,--年龄
          b.classname,--班级
          b.monitorname,--班长
-         b.headmastername--班主任
-    from stuinfo a, class b
-   where a.classno = b.classno;
+    from stuinfo a, class b where a.classno = b.classno;
    --利用上面创建的视图查询
   select * from vw_stuinfo  --vw_stuinfo为视图名
-  [where column = 'column1'];  --可以添加限制条件，视图还可以嵌套
+  [where column = 'values'];  --可以添加限制条件，视图还可以嵌套
   ```
-
+  
 - 删除视图
 
   ```plsql

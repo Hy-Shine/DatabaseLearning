@@ -13,22 +13,34 @@ SELECT * FROM USER_CONSTRAINTS WHERE OWNER = 'USER_NAME' AND TABLE_NAME = 'TABLE
 #### 2.1	主键约束
 
 ```plsql
+--设置新的主键时,需要把已存在的主键删除
 --单个字段主键
-alter table table1 add constraint constraint_name primary key col1;
-alter table table1 add primary key col1;
+ALTER TABLE TABLE1 ADD CONSTRAINT CONSTRAINT_NAME PRIMARY KEY COL1;
+ALTER TABLE TABLE1 ADD PRIMARY KEY COL1;
 --复合主键
-alter table table1 add constraint constraint_name primary key (col1,col2,..);
+ALTER TABLE TABLE1 ADD CONSTRAINT CONSTRAINT_NAME PRIMARY KEY (COL1,COL2,..);
 --删除主键
-alter table table1 drop constraint constraint_name;
-alter table table1 drop primary key;
+ALTER TABLE TABLE1 DROP CONSTRAINT CONSTRAINT_NAME;
+ALTER TABLE TABLE1 DROP PRIMARY KEY;
 ```
 
 启用/禁用Oracle PRIMARY KEY约束
 
 ```plsql
-ALTER TABLE table_name DISABLE|ENABLE CONSTRAINT primary_key_constraint_name;
+--[启用|禁用约束]
 ALTER TABLE table_name DISABLE|ENABLE PRIMARY KEY;
-[启用|禁用约束]
 ALTER TABLE TABLE_NAME ENABLE|DISABLE CONSTRAINT CONSTRAINT_NAME;
 ```
+
+#### 2.2 检查约束
+
+```plsql
+--添加检查约束或建表时添加约束
+ALTER TABLE TABLE_NAME MODIFY FILED1 CHECK ();  --单字段条件
+ALTER TABLE TABLE_NAME ADD CONSTRAINT CHECK_NAME CHECK (filed1_sta AND filed2_sta);--多字段约束条件
+--删除检查约束
+ALTER TABLE DROP CONSTRAINT check_name;
+```
+
+
 
